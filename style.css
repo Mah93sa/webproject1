@@ -1,10 +1,14 @@
 body{
   margin: 0;
-  font-family: sans-serif;
+  font-family:sans-serif;
+}
+.header a{
+  text-decoration: none;
+  color:azure;
 }
 a{
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color:burlywood;
 }
 a:hover{
   color: rgb(43, 66, 22);
@@ -26,6 +30,7 @@ a:hover{
   color: rgb(246, 246, 237);
   display: block;
   padding-bottom: 10px;
+  letter-spacing: 4px;
 }
 .header #zard{
   color: rgb(255, 220, 15);
@@ -34,6 +39,11 @@ a:hover{
 .header span#note{
   font-size: 15px;
   color: rgb(185, 185, 186);
+  letter-spacing: 2px;
+}
+.header span#note:hover{
+  text-shadow: 1px 0px rgb(173, 180, 154);
+
 }
 .header ul{
   list-style: none;
@@ -54,4 +64,120 @@ a:hover{
 }
 .header ul li a:hover{
   background-color: rgb(123, 189, 112);
+}
+.main{
+  margin-bottom: 550px;
+}
+.bigwidth #tree{
+  max-width: 100%;
+  height: auto;
+  border: 10px solid rgb(172, 176, 175);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.bigwidth #tree:hover{
+
+}
+.bigwidth #right-col{
+  position: absolute;
+  margin-left: 10px;
+  width: 600px;
+  height: 400px;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgb(52, 53, 54);
+  text-indent: 15px;
+  word-break: keep-all;
+  word-wrap: break-word;
+  white-space: normal;
+  text-align:justify;
+}
+.bigwidth #left-col{
+  position: absolute;
+  margin-left: 10px;
+  width: 250px;
+  height: 400px;
+  margin-left: 650px;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgb(52, 53, 54);
+  word-break: keep-all;
+  word-wrap: break-word;
+  white-space: normal;
+  text-align:justify;
+}
+.bigwidth #left-col h3{
+  color: darkcyan;
+}
+.bigwidth #part1 p{
+  text-indent: 10px;
+}
+.bigwidth #part1{
+  border: 2px solid rgb(214, 214, 214);
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  text-indent:2px;
+}
+
+.bigwidth #part2{
+  border: 2px solid rgb(214, 214, 214);
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  text-indent:2px;
+}
+.footer{
+  position: absolute;
+  width: 100%;
+  height: 350px;
+  background-color:rgb(54, 69, 87);
+}
+
+.login-box{
+  position: relative;
+  width: 350px;
+  height: 250px;
+  background-color:rgb(23, 26, 25);
+  top: 35px;
+  left: 15px;
+  text-align: center;
+  padding: 15px 20px;
+  letter-spacing: 2px;
+  color: aliceblue;
+  border-radius: 25px;
+}
+.login-box h2{
+  letter-spacing: 5px;
+  font-size: 30px;
+
+}
+.user-box input{
+  box-sizing:content-box;
+  width: 350px;
+  font-size: 17px;
+  letter-spacing: 2px;
+  color:rgb(28, 236, 213);
+  padding:10px 0;
+  background-color:rgb(23, 26, 25);
+  border: 0px solid #000;
+  border-bottom: 1px solid white;
+  border-bottom-width:thin;
+  margin-bottom: 15px;
+}
+.login-box a span{
+  padding: 5px;
+  position: absolute;
+  display: block;
+  margin-top: 20px;
+  font-size: 22px;
+  right: 155px;
+  line-height: 15px;
+  color:rgb(28, 236, 213);
+}
+.login-box a span:hover{
+  letter-spacing: 2px;
+  text-shadow: -2px 0 ;
+  transition: 1s;
+
 }
