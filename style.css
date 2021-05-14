@@ -130,18 +130,19 @@ a:hover{
 .footer{
   position: absolute;
   width: 100%;
-  height: 350px;
+  height: 400px;
   background-color:rgb(54, 69, 87);
 }
 
 .login-box{
+  box-sizing:border-box;
   position: relative;
   width: 350px;
-  height: 250px;
+  height: 320px;
   background-color:rgb(23, 26, 25);
   top: 35px;
   left: 15px;
-  text-align: center;
+  text-align:center;
   padding: 15px 20px;
   letter-spacing: 2px;
   color: aliceblue;
@@ -153,8 +154,7 @@ a:hover{
 
 }
 .user-box input{
-  box-sizing:content-box;
-  width: 350px;
+  width: 300px;
   font-size: 17px;
   letter-spacing: 2px;
   color:rgb(28, 236, 213);
@@ -166,18 +166,119 @@ a:hover{
   margin-bottom: 15px;
 }
 .login-box a span{
-  padding: 5px;
+  padding: 20px 25px;
   position: absolute;
   display: block;
   margin-top: 20px;
   font-size: 22px;
-  right: 155px;
+  right: 115px;
   line-height: 15px;
   color:rgb(28, 236, 213);
 }
-.login-box a span:hover{
-  letter-spacing: 2px;
+.submit a span{
+}
+.submit a span:hover{
   text-shadow: -2px 0 ;
-  transition: 1s;
-
+  box-shadow:
+  0 0 15px rgb(22, 206, 209),
+  0px 0px 0px rgb(144, 179, 180),
+  0 0 35px rgb(30, 86, 87);
+  border-radius:20px;
+}
+.social-media{
+  position: absolute;
+  width: 100%;
+  margin-left:400px;
+  top:20px;
+}
+.social-media ul li img{
+  display: inline;
+  width:50px;
+  height:50px;
+}
+.social-media ul li{
+    display: inline;
+    float:left;
+}
+.social-media a{
+  color: rgb(222, 231, 237);
+}
+#linkedin p{
+  position: absolute;
+  margin-left: 5px;
+  margin-right: 100px;
+  margin-top:20px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 10px;
+  font-weight: bold;
+}
+#linkedin img{
+  position: absolute;
+  margin-left: -50px;
+  margin-top:0px;
+  margin-right: 210px;
+}
+#instagram p{
+  position: absolute;
+  margin-left: 60px;
+  margin-right: 100px;
+  margin-top:20px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 10px;
+  font-weight: bold;
+}
+#instagram img{
+  position: absolute;
+  margin-top:0px;
+  margin-right: 200px;
+}
+#facebook p{
+  position: absolute;
+  margin-left: -460px;
+  margin-right: 100px;
+  margin-top:120px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 10px;
+  font-weight: bold;
+}
+#facebook img{
+  position: absolute;
+  margin-left: -515px;
+  margin-top:100px;
+  margin-right: 200px;
+}
+#youtube p{
+  position: absolute;
+  margin-left: -460px;
+  margin-right: 100px;
+  margin-top:220px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 10px;
+  font-weight: bold;
+}
+#youtube img{
+  position: absolute;
+  margin-left: -515px;
+  margin-top:200px;
+  margin-right: 200px;
+}
+#twitter p{
+  position: absolute;
+  margin-left: -200px;
+  margin-right: 100px;
+  margin-top:120px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 10px;
+  font-weight: bold;
+}
+#twitter img{
+  position: absolute;
+  margin-left: -250px;
+  margin-top:100px;
+  margin-right: 200px;
 }
