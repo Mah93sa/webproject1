@@ -2,26 +2,31 @@ body{
   margin: 0;
   font-family:sans-serif;
 }
+.bigwidth{
+  width: 880px;
+  margin:0 auto 0 auto;
+}
 .header a{
   text-decoration: none;
   color:azure;
 }
 a{
   text-decoration: none;
-  color:burlywood;
+  color:gray;
 }
 a:hover{
   color: rgb(43, 66, 22);
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color:indianred;
 }
 .header{
   background-color: rgb(39, 40, 45);
   height: 170px;
   border-bottom: 5px solid rgb(25, 101, 16);
 }
-.bigwidth{
-  width: 880px;
-  margin:0 auto 0 auto;
-}
+
 .header .bigwidth{
   padding-top: 35px;
 }
@@ -31,6 +36,10 @@ a:hover{
   display: block;
   padding-bottom: 10px;
   letter-spacing: 4px;
+}
+.header a#title:hover{
+  transform: translateX(200px);
+  transition: 2s;
 }
 .header #zard{
   color: rgb(255, 220, 15);
@@ -55,15 +64,23 @@ a:hover{
   float: left;
   background-color:rgb(95, 98, 97);
   padding: 7px 20px 7px 20px;
-  border-radius: 5px 5px 1px 1px;
+  border-radius: 7px 7px 1px 1px;
   margin-right: 5px;
   margin-top: 9px;
+  letter-spacing: 1px;
+  color:azure;
 }
 #first{
   background-color:rgb(123, 189, 112);
 }
+
 .header ul li a:hover{
   background-color: rgb(123, 189, 112);
+  font-weight: bold;
+  font-size: 18px;
+}
+.header ul li a:active{
+  background-color: rgb(79, 38, 42);
 }
 .main{
   margin-bottom: 550px;
@@ -76,6 +93,13 @@ a:hover{
   margin-bottom: 20px;
 }
 .bigwidth #tree:hover{
+  transform: translate(100px,10px);
+  transition: 2S;
+  box-shadow:
+  0 5px 10px 2px rgb(109, 153, 128),
+  0 0px 10px 2px rgb(79, 131, 116),
+  0 5px 10px 2px rgb(116, 162, 144),
+  0 0px 10px 2px rgb(58, 111, 93);
 
 }
 .bigwidth #right-col{
@@ -127,34 +151,40 @@ a:hover{
   margin-bottom: 15px;
   text-indent:2px;
 }
+.footer .bigwidth{
+  width: 880px;
+  margin:0 auto 0 auto;
+}
 .footer{
   position: absolute;
+  display: inline;
   width: 100%;
-  height: 400px;
-  background-color:rgb(54, 69, 87);
+  height:360px;
+  background-color:rgb(14, 44, 56);
 }
 
-.login-box{
+.footer .login-box{
   box-sizing:border-box;
-  position: relative;
+  position:relative;
   width: 350px;
-  height: 320px;
-  background-color:rgb(23, 26, 25);
-  top: 35px;
-  left: 15px;
+  height: 300px;
+  background-color:rgb(17, 19, 19);
+  top: 30px;
   text-align:center;
   padding: 15px 20px;
   letter-spacing: 2px;
   color: aliceblue;
   border-radius: 25px;
-}
-.login-box h2{
-  letter-spacing: 5px;
-  font-size: 30px;
 
 }
-.user-box input{
-  width: 300px;
+.footer .login-box h2{
+  letter-spacing: 5px;
+  font-size: 30px;
+}
+
+.footer .user-box input{
+  position:relative;
+  width: 250px;
   font-size: 17px;
   letter-spacing: 2px;
   color:rgb(28, 236, 213);
@@ -164,20 +194,20 @@ a:hover{
   border-bottom: 1px solid white;
   border-bottom-width:thin;
   margin-bottom: 15px;
+  display: inline;
 }
-.login-box a span{
-  padding: 20px 25px;
-  position: absolute;
-  display: block;
-  margin-top: 20px;
+.login-box .submit{
+  position:relative;
+  display:block;
+  width:100px;
+  padding: 15px 25px;
   font-size: 22px;
-  right: 115px;
   line-height: 15px;
   color:rgb(28, 236, 213);
+  top:20px;
+  left: 70px;
 }
-.submit a span{
-}
-.submit a span:hover{
+.bigwidth .submit:hover{
   text-shadow: -2px 0 ;
   box-shadow:
   0 0 15px rgb(22, 206, 209),
@@ -185,100 +215,52 @@ a:hover{
   0 0 35px rgb(30, 86, 87);
   border-radius:20px;
 }
-.social-media{
-  position: absolute;
-  width: 100%;
-  margin-left:400px;
-  top:20px;
+
+.bigwidth .social-media{
+  width: 880px;
+  margin:0 auto 0 auto;
 }
-.social-media ul li img{
-  display: inline;
-  width:50px;
-  height:50px;
+.social-media{
+  display:inline;
+  position:absolute;
+}
+.social-media ul{
+  list-style: none;
+  font-size: 18px;
+  margin-left: 350px;
+  margin-top:-260px;
+  text-align: left;
 }
 .social-media ul li{
-    display: inline;
-    float:left;
+    float: left;
+    margin-top:70px;
+}
+.social-media ul li p{
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 10px;
+  font-weight: bold;
+  margin-left:50px;
+  margin-right:20px;
+}
+.social-media ul li img{
+  display:inline;
+  position:absolute;
+  width:45px;
+  height:45px;
+  margin-top:-40px;
 }
 .social-media a{
   color: rgb(222, 231, 237);
 }
-#linkedin p{
-  position: absolute;
-  margin-left: 5px;
-  margin-right: 100px;
-  margin-top:20px;
-  font-size: 15px;
-  letter-spacing: 1px;
-  line-height: 10px;
-  font-weight: bold;
+
+.social-media ul li img:hover{
+  transform: rotate(360deg);
+  transition: 1s;
 }
-#linkedin img{
-  position: absolute;
-  margin-left: -50px;
-  margin-top:0px;
-  margin-right: 210px;
-}
-#instagram p{
-  position: absolute;
-  margin-left: 60px;
-  margin-right: 100px;
-  margin-top:20px;
-  font-size: 15px;
-  letter-spacing: 1px;
-  line-height: 10px;
-  font-weight: bold;
-}
-#instagram img{
-  position: absolute;
-  margin-top:0px;
-  margin-right: 200px;
-}
-#facebook p{
-  position: absolute;
-  margin-left: -460px;
-  margin-right: 100px;
-  margin-top:120px;
-  font-size: 15px;
-  letter-spacing: 1px;
-  line-height: 10px;
-  font-weight: bold;
-}
-#facebook img{
-  position: absolute;
-  margin-left: -515px;
-  margin-top:100px;
-  margin-right: 200px;
-}
-#youtube p{
-  position: absolute;
-  margin-left: -460px;
-  margin-right: 100px;
-  margin-top:220px;
-  font-size: 15px;
-  letter-spacing: 1px;
-  line-height: 10px;
-  font-weight: bold;
-}
-#youtube img{
-  position: absolute;
-  margin-left: -515px;
-  margin-top:200px;
-  margin-right: 200px;
-}
-#twitter p{
-  position: absolute;
-  margin-left: -200px;
-  margin-right: 100px;
-  margin-top:120px;
-  font-size: 15px;
-  letter-spacing: 1px;
-  line-height: 10px;
-  font-weight: bold;
-}
-#twitter img{
-  position: absolute;
-  margin-left: -250px;
-  margin-top:100px;
-  margin-right: 200px;
+.social-media ul li p:hover{
+  color:rgb(113, 177, 99);
+  text-shadow: 2px 5px rgb(42, 52, 40);
+  transform: translate(10px,10px);
+  transition: 2s;
 }
